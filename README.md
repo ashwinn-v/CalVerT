@@ -2,6 +2,8 @@
 
 Code for the paper **"CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks"**
 
+##### Abstract
+LLM agents in knowledge intensive question answering take retrieval and reasoning actions with incomplete knowledge about whether their current answer is uncertain, unsupported, or already complete. This produces two failure modes: committing to confident but unsupported answers, which hurts accuracy, and over- retrieving when the evidence in hand already suffices, resulting in wasted compute. To give agents a more complete picture of the state space they are operating in, we introduce calibrated verifier telemetry (CalVerT), which augments the agent’s state with additional telemetry: a calibrated self-confidence score and grounding verifier score. We show that CalVerT can improve agents both in training- free and training-based settings. On four QA benchmarks, we find that CalVerT raises F1 while cutting redundant retrieval, where agents over-search and trigger retrieval in cases where agents over-rely on parametric knowledge. We show that CalVerT can augment existing QA frameworks without training. Moreover, CalVerT also improves trained systems: by simply augmenting an agent’s state with telemetry, we observe improvements after reinforcement learning, as compared to an agent with identical training but no CalVerT telemetry.
 
 ## Install and Setup
 
