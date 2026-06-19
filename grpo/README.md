@@ -49,8 +49,7 @@ python -m grpo.tinker_train \
 | `TINKER_API_KEY` | Tinker SDK authentication |
 | `WANDB_API_KEY` | Optional; enables wandb logging when present |
 | `WANDB_PROJECT` | Override the default wandb project name (`telemetry-agent`) |
-| `HF_TOKEN` | Required when the base model is gated |
-| `TELEMETRY_AGENT_ROOT` | Root of this repo; used by the agent loop to find `grpo/config/reward_config.yaml` |
+| `HF_TOKEN` | Required when the base model is gated ||
 | `HF_HOTPOT_TRAJECTORIES` | HF dataset id for the SFT cold-start trajectories |
 
 ## Reward
