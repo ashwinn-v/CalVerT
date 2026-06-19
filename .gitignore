@@ -1,0 +1,31 @@
+# Generated outputs
+results/
+runs/
+wandb/
+checkpoints/
+
+# Data and indices (large; users build locally)
+data/*_chunks.jsonl
+data/*_bm25_index/
+data/*_dense_index/
+data/*.parquet
+data/*.faiss
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

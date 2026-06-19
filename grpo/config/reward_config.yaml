@@ -1,0 +1,25 @@
+# Default reward + agent-loop configuration for the Tinker GRPO trainer.
+#
+# ``grpo.reward.compute_score`` reads the reward block; the agent-loop block
+# is consumed by the runtime module passed to
+# ``grpo/tinker_train.py --runtime_module``.
+
+agent_loop:
+  agent_max_turns: 8
+  agent_max_new_tokens: 2048
+  rollout_max_model_len: 16384
+  retrieval_top_k: 8
+
+reward:
+  # Paper recipe: r = alpha * F1 - beta * lm_cost
+  # where lm_cost = min(total_lm_calls / budget, 1.0).
+  alpha: 2.0
+  beta: 0.15
+  total_lm_calls_budget: 9
+
+  # F1-substring cap (verifier-gated, Search-R1-style). Caps F1 at
+  # ``f1_substring_cap`` when the predicted answer is a strict substring of
+  # gold (or vice versa), EM is zero, and MiniCheck grounding is below
+  # ``minicheck_threshold``.
+  f1_substring_cap: 0.3
+  minicheck_threshold: 0.5
