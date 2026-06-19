@@ -1,4 +1,4 @@
-# telemetry-agent
+# CalVerT
 
 Code for the paper **"CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks"**
 
