@@ -3,7 +3,7 @@
 Code for the paper **"CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks"**
 
 
-## Install
+## Install and Setup
 
 ```bash
 git clone https://github.com/ashwinn-v/CalVerT.git
