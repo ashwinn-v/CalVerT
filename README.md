@@ -5,7 +5,7 @@ Authors: [Ashwin Vinod](https://ashwinn-v.github.io/) | [Ying Ding](https://ying
 [![paper](https://img.shields.io/badge/arXiv-CalVerT-b31b1b)](YOUR_LINK)
 
 <p align="center">
-  <img src="figs/teaser.png" alt="teaser" width="800">
+  <img src="figs/teaser.png" alt="teaser" width="400">
 </p>
 
 
@@ -26,7 +26,7 @@ export TELEMETRY_AGENT_ROOT="$PWD"
 The eval runners assume vLLM compatible GPUs. CPU-only smoke runs work for
 the tests in `tests/` but not for full DINCO + MiniCheck inference.
 
-## CalVerT on MutliHop QA
+## CalVerT on Multihop QA
 
 ```bash
 # 1. Pull HotpotQA distractor split and build the per-question BM25 index.
