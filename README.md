@@ -5,7 +5,7 @@ Authors: [Ashwin Vinod](https://ashwinn-v.github.io/) | [Ying Ding](https://ying
 [![paper](https://img.shields.io/badge/arXiv-CalVerT-b31b1b)](YOUR_LINK)
 
 <p align="center">
-  <img src="figs/teaser.png" alt="teaser" width="400">
+  <img src="figs/teaser.png" alt="teaser" width="450">
 </p>
 
 
