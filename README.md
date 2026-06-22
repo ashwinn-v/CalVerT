@@ -1,6 +1,14 @@
-# CalVerT
+### CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks
 
-Code for the paper **"CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks"**
+Authors: [Ashwin Vinod](https://ashwinn-v.github.io/) | [Ying Ding](https://yingding.ischool.utexas.edu/) |  [Elias Stengel-Eskin](https://esteng.github.io/)
+
+[![paper](https://img.shields.io/badge/arXiv-CalVerT-b31b1b)](YOUR_LINK)
+
+<p align="center">
+  <img src="figs/teaser.png" alt="teaser" width="800">
+</p>
+
+
 
 ### Abstract
 LLM agents in knowledge intensive question answering take retrieval and reasoning actions with incomplete knowledge about whether their current answer is uncertain, unsupported, or already complete. This produces two failure modes: committing to confident but unsupported answers, which hurts accuracy, and over- retrieving when the evidence in hand already suffices, resulting in wasted compute. To give agents a more complete picture of the state space they are operating in, we introduce calibrated verifier telemetry (CalVerT), which augments the agent’s state with additional telemetry: a calibrated self-confidence score and grounding verifier score. We show that CalVerT can improve agents both in training- free and training-based settings. On four QA benchmarks, we find that CalVerT raises F1 while cutting redundant retrieval, where agents over-search and trigger retrieval in cases where agents over-rely on parametric knowledge. We show that CalVerT can augment existing QA frameworks without training. Moreover, CalVerT also improves trained systems: by simply augmenting an agent’s state with telemetry, we observe improvements after reinforcement learning, as compared to an agent with identical training but no CalVerT telemetry.
@@ -18,21 +26,21 @@ export TELEMETRY_AGENT_ROOT="$PWD"
 The eval runners assume vLLM compatible GPUs. CPU-only smoke runs work for
 the tests in `tests/` but not for full DINCO + MiniCheck inference.
 
-## CalVerT on HotpotQA-distractor
+## CalVerT on MutliHop QA
 
 ```bash
 # 1. Pull HotpotQA distractor split and build the per-question BM25 index.
 bash scripts/download_hotpotqa.sh
 bash scripts/build_hotpotqa_index.sh
 
-Change dataset name to evaluate on 2Wiki (2WikiMultihopQA) and MuSiQue
+#Change dataset name to evaluate on 2Wiki (2WikiMultihopQA) and MuSiQue
 
 
 # 2. Paired role vs no_telemetry evaluation on Qwen3-32B at N=300 dev.
 bash scripts/run_hotpotqa_role_beam.sh
 ```
 
-## CalVerT on WiTQA
+## CalVerT on single hop WiTQA
 
 ```bash
 bash scripts/download_witqa.sh
