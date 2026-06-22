@@ -8,6 +8,12 @@ Authors: [Ashwin Vinod](https://ashwinn-v.github.io/) | [Ying Ding](https://ying
   <img src="figs/teaser.png" alt="teaser" width="450">
 </p>
 
+<p align="center">
+  Exposing calibrated confidence and grounding signals to the agent at each turn leads to better action choices.
+  <b>Left:</b> Without telemetry, the agent retrieves additional evidence but still stops with an unsupported answer to the subquestion, resulting in an incorrect final answer.
+  <b>Right:</b> Our method exposes low confidence and weak grounding through verifier telemetry, prompting the agent to retrieve more evidence when needed, refine the answer for targeted retrieval, and commit only once the answer is well grounded.
+</p>
+
 
 
 ### Abstract
