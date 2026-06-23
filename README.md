@@ -84,6 +84,24 @@ Qwen3-30B-A3B MoE).
 - **Grounding verifier:** `https://huggingface.co/bespokelabs/Bespoke-MiniCheck-7B`.
 - **NLI for DINCO:** `https://huggingface.co/MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli`.
 
+## Citation
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@misc{vinod2026calvertaugmentingagentscalibrated,
+      title={CalVerT: Augmenting Agents with Calibrated Verifier Telemetry Improves Action and Learning in Knowledge-Intensive Tasks}, 
+      author={Ashwin Vinod and Ying Ding and Elias Stengel-Eskin},
+      year={2026},
+      eprint={2606.21777},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.21777}, 
+}
+
+```
+
 ## License
 
 MIT. See `LICENSE`.
