@@ -2,7 +2,7 @@
 
 Authors: [Ashwin Vinod](https://ashwinn-v.github.io/) | [Ying Ding](https://yingding.ischool.utexas.edu/) |  [Elias Stengel-Eskin](https://esteng.github.io/)
 
-[![paper](https://img.shields.io/badge/arXiv-CalVerT-b31b1b)](YOUR_LINK)
+[![paper](https://img.shields.io/badge/arXiv-CalVerT-b31b1b)](https://arxiv.org/abs/2606.21777)
 
 <p align="center">
   <img src="figs/teaser.png" alt="teaser" width="450">
